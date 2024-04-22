@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from starlette.responses import HTMLResponse
 
-from views import api
+from src.views import api
 
 app = FastAPI(
     title='WTS',
