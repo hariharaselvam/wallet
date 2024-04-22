@@ -28,7 +28,7 @@ class AccountModel(Base):
     id = Column(String, primary_key=True, index=True)
     wallet_id = Column(String)
     user_id = Column(String)
-    balance = Column(Integer)
+    balance = Column(Integer, default=0)
     min_amount = Column(Integer, default=0)
     max_transaction = Column(Integer, default=10)
     created_at = Column(DateTime, default=datetime.utcnow)
